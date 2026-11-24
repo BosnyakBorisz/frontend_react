@@ -1,122 +1,90 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+
+/* function Header() {
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Aa</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+    <header>
+      <h1>Tanulói kurzuskatalógus</h1>
+      <hr />
+    </header>
+  );
 }
 
-export default App
+function StudentCard({ nev, szakma, kedvencNyelv }) {
+  return (
+    <div>
+      <h3>{nev}</h3>
+      <p>Szakma: {szakma}</p>
+      <p>Kedvenc nyelv: {kedvencNyelv}</p>
+    </div>
+  );
+}
+
+function StudentList() {
+  return (
+    <main>
+      <StudentCard 
+        nev="Kovács Anna" 
+        szakma="Szoftverfejlesztő és -tesztelő" 
+        kedvencNyelv="JavaScript" 
+      />
+      <StudentCard 
+        nev="Nagy Péter" 
+        szakma="Rendszerüzemeltető" 
+        kedvencNyelv="Python" 
+      />
+      <StudentCard 
+        nev="Szabó Eszter" 
+        szakma="Webfejlesztő" 
+        kedvencNyelv="TypeScript" 
+      />
+    </main>
+  );
+}
+
+function Footer() {
+  return (
+    <footer>
+      <p>2026 Frontend</p>
+    </footer>
+  );
+}
+
+function App() {
+  return (
+    <>
+      <Header />
+      <StudentList />
+      <Footer />
+    </>
+  );
+}
+
+export default App; */
+
+
+
+/* function Udvozlet(){
+  return(
+    <>
+      <h1>Üdv React</h1>
+      <p>Ez JavaScriptből került az oldalra</p>
+    </>
+  );
+}  
+  
+export default Udvozlet */
+  
+  
+/*function StudentCard() {
+    return (
+      <>
+        <p>Bosnyák Borisz</p>
+        <p>13. évfolyam</p>
+        <p>C#</p>
+        <p>Alvás</p>
+      </>
+    );
+  }
+
+  export default StudentCard;*/
