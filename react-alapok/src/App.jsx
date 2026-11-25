@@ -1,54 +1,13 @@
-function Header() {
-  return (
-    <header>
-      <h1>Tanulói kurzuskatalógus</h1>
-      <hr/>
-    </header>
-  );
-}
+import { Header } from "./components/header";
+import { ProfileCard } from "./components/header";
+import { Footer } from "./components/footer";
+import { StudentList } from "./components/studentList";
 
-function StudentCard({ nev, szakma, kedvencNyelv }) {
-  return (
-    <div>
-      <h3>{nev}</h3>
-      <p>Szakma: {szakma}</p>
-      <p>Kedvenc nyelv:{kedvencNyelv}</p>
-    </div>
-  );
-}
-
-function StudentList() {
-  const tanulok = [
-    { id: 1, nev: "Kovács Anna", szakma: "Szoftverfejlesztő és -tesztelő", kedvencNyelv: "JavaScript" },
-    { id: 2, nev: "Nagy Péter", szakma: "Rendszerüzemeltető", kedvencNyelv: "Python" },
-    { id: 3, nev: "Szabó Eszter", szakma: "Webfejlesztő", kedvencNyelv: "TypeScript" }
-  ];
-
-  return (
-    <main>
-      {tanulok.map((tanulo) => (
-        <StudentCard 
-          key={tanulo.id}
-          nev={tanulo.nev}
-          szakma={tanulo.szakma}
-          kedvencNyelv={tanulo.kedvencNyelv}
-        />
-      ))}
-    </main>
-  );
-}
-
-function Footer(){
-  return(
-    <footer>
-      <p>2026 Frontend</p>
-    </footer>
-  );
-}
 function App(){
   return(
     <>
       <Header />
+      <ProfileCard />
       <StudentList />
       <Footer />
     </>
